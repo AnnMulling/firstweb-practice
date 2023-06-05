@@ -1,0 +1,99 @@
+/* main page */
+ul{
+    list-style: none;
+}
+
+ol{
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #3d3735;
+}
+
+#logo{
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    margin-left: 40px;
+    color:#3b302c;
+}
+
+.main-nav{
+    display: inline-block;
+    font-family: 'Manrope', 'sans-serif';
+    margin-top: 50px;
+    margin-left: 30%;
+
+
+}
+
+.navlist{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+
+.logo-nav{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #9BABB8;
+    color: #040302;
+
+
+}
+
+/* About the creator  */
+h2{
+    font-size: 50px;
+    font-family: 'Dmsans', sans-serif;
+    color: #564747;
+}
+
+p{
+    font-family: 'Manrope', sans-serif;
+}
+
+.webCreator{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    background-color: #EEE3CB;
+    margin-bottom: 20px;
+}
+
+.textCreator{
+    width: 600px;
+    margin-left: 30px;
+    padding: 20px;
+
+}
+
+.img-creator{
+    padding: 5px;
+    width: 600px;
+    margin-left: 5px;
+}
+.imgCreator{
+    border-radius: 50%;
+    width: 420px ;
+    height:  400px;
+    margin-left: 10%;
+}
+
+/* Diet Preferences */
+.dietPref{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Manrope', sans-serif;
+    align-items: center;
+    background-color: #D7C0AE;
+}
+
+.dietWords{
+    display: inline-block;
+    padding-right: 50px;
+}
