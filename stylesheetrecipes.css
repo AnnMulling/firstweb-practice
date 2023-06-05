@@ -1,0 +1,89 @@
+/* nav bar */
+ul{
+    list-style: none;
+}
+
+ol{
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #3d3735;
+}
+
+#logo{
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    margin-left: 40px;
+    color:#3b302c;
+}
+
+.main-nav{
+    display: inline-block;
+    font-family: 'Manrope', 'sans-serif';
+    margin-top: 50px;
+    margin-left: 30%;
+}
+
+.navlist{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+.logo-nav{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #9BABB8;
+    color: #040302;
+}
+
+/* contents start here */
+h1{
+    font-family: 'Dmsans', sans-serif;
+    font-size: 60px;
+    color: #3b302c;
+}
+.head{
+    background-color: #EEE3CB;
+    padding-left: 20px;
+}
+
+h2{
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+}
+
+/* Align contents */
+.allRecipes{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+/* Social Medias */
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #967E76;
+}
+.socialMediaButton{
+    display: flex;
+    flex-direction: row;
+}
+
+#title{
+    font-size: 30px;
+}
+
+li{
+    padding-right: 30px;
+}
+
+svg:hover{
+    color:#967E76;
+}

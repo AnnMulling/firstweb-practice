@@ -3,60 +3,127 @@
     <head>
         <meta charset="Utf-8">
         <title>Recipe</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="stylesheetrecipes.css">
+         <!-- font Caveat,cursive -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Caveat&family=Open+Sans&family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+         <!-- font2  DMsans-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Caveat&family=DM+Sans&family=Open+Sans&family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+         <!-- font3 Manrope -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Caveat&family=DM+Sans:wght@400;700&family=Manrope:wght@200&family=Open+Sans&family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Collaborate/Contact</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Tools</a></li>
-            </ul>
-        </nav>
-
-        <h1>Recipes</h1>
-
-        <div>
-            <ul>
-                <li>Breakfast</li>
-                <li>Lunch & Dinner</li>
-                <li>Salad</li>
-                <li>Dessert</li>
-                <li>Snack</li>
-            </ul>
+        <div class="logo-nav">
+            <h1 id="logo">Meien's Kitchen</h1>
+            <!-- nav bar liking to all 4 pages -->
+            <nav class="main-nav">
+                <ol>
+                    <li class="navlist"><a href="./index.html">About</a></li>
+                    <li class="navlist"><a href="./form.html">Collaborate/Contact</a></li>
+                    <li class="navlist"><a href="./recipe.html">Recipes</a></li>
+                    <li class="navlist"><a href="./tools.html">Tools</a></li>
+                </ol>
+            </nav>
         </div>
-
-        <div>
-            <h2>Connect with us</h2>
-            <ul class="social media">
-                <li>
-                    <a href="https://www.pinterest.com/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/home">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" class="bi bi-tiktok" viewBox="0 0 16 16"> <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/> </svg>
-                    </a>
-                </li>
-            </ul>
+<!-- Content starts here -->
+        <div class="head">
+            <h1>Recipes</h1>
+        </div>
+         <!-- breakfast -->
+         <div class="allRecipes">
+            <div>
+                <a href="#">
+                    <img width="320" height="400" src="https://shuangyskitchensink.com/wp-content/uploads/2021/02/Green-bean-Chicken-3-819x1024.jpg" alt="breakfastFood">
+                    <h2>Breakfast</h2>
+                </a>
+            </div>
+            <!-- Lunch & Dinner -->
+            <div>
+                <a href="#">
+                    <img width="350" height="400" src="https://fitfoodiefinds.com/wp-content/uploads/2022/12/Peanut-Butter-Oat-Cups-sq-550x550.jpg" alt="lunch-n-Dinner">
+                    <h2>Lunch & Dinner</h2>
+                </a>
+            </div>
+            <!-- Salad -->
+            <div>
+                <a href="#">
+                    <img width="320" height="400" src="https://thehealthyepicurean.com/wp-content/uploads/2021/08/Pinwheels-2-scaled-1.jpg" alt="salad">
+                    <h2>Salad</h2>
+                </a>
+            </div>
+            <!-- Dessert -->
+            <div>
+                <a href="#">
+                    <img width="320" height="400" src="https://shuangyskitchensink.com/wp-content/uploads/2021/02/Green-bean-Chicken-3-819x1024.jpg" alt="dessert">
+                    <h2>Dessert</h2>
+                </a>
+            </div>
+            <!-- snack -->
+            <div>
+                <a href="#">
+                    <img width="320" height="400" src="https://thehealthyepicurean.com/wp-content/uploads/2021/08/Pinwheels-2-scaled-1.jpg" alt="snack">
+                    <h2>Snack</h2>
+                </a>
+            </div>
+            <!-- Drink -->
+            <div>
+                <a href="#">
+                    <img width="320" height="400" src="https://thehealthyepicurean.com/wp-content/uploads/2021/08/Pinwheels-2-scaled-1.jpg" alt="snack">
+                    <h2>Drink</h2>
+                </a>
+            </div>
+            <!-- Tea Time -->
+            <div>
+                <a href="#">
+                    <img width="320" height="400" src="https://thehealthyepicurean.com/wp-content/uploads/2021/08/Pinwheels-2-scaled-1.jpg" alt="snack">
+                    <h2>Tea Time</h2>
+                </a>
+            </div>
+            <!-- Unique Bites -->
+            <div>
+                <a href="#">
+                    <img width="320" height="400" src="https://thehealthyepicurean.com/wp-content/uploads/2021/08/Pinwheels-2-scaled-1.jpg" alt="snack">
+                    <h2>Unique Bites</h2>
+                </a>
+            </div>
+        </div>
+<!-- Social Media starts here -->
+        <div class="socialMedia">
+            <h2 id="title">Connect with us</h2>
+                <ul class="socialMediaButton">
+                    <li>
+                        <a href="https://www.pinterest.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/home">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000000" class="bi bi-tiktok" viewBox="0 0 16 16"> <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"/> </svg>
+                        </a>
+                    </li>
+                </ul>
         </div>
     </body>
 </html>
+f

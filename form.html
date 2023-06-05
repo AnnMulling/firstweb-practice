@@ -2,24 +2,40 @@
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <title></title> Meien's Kitchen Contact</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <title>Contact Form</title>
+        <link rel="stylesheet" href="stylesheetform.css">
+         <!-- font Caveat,cursive -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Caveat&family=Open+Sans&family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+         <!-- font2  DMsans-->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Caveat&family=DM+Sans&family=Open+Sans&family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
+         <!-- font3 Manrope -->
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Cairo&family=Caveat&family=DM+Sans:wght@400;700&family=Manrope:wght@200&family=Open+Sans&family=Plus+Jakarta+Sans:wght@200&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Collaborate/Contact</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Tools</a></li>
-            </ul>
-        </nav>
-
-        <div>
+        <div class="logo-nav">
+            <h1 id="logo">Meien's Kitchen</h1>
+            <!-- nav bar liking to all 4 pages -->
+            <nav class="main-nav">
+                <ol>
+                    <li class="navlist"><a href="./index.html">About</a></li>
+                    <li class="navlist"><a href="./form.html">Collaborate/Contact</a></li>
+                    <li class="navlist"><a href="./recipe.html">Recipes</a></li>
+                    <li class="navlist"><a href="./tools.html">Tools</a></li>
+                </ol>
+            </nav>
+        </div>
+        <!-- form starts here -->
+        <div class="formContainer">
             <form action="/form-handling-url" method="post"></form>
-                <fieldset>
-                    <legend>Contact us</legend>
+                <fieldset class="itemsContainer">
+                    <legend id="title">Contact us</legend>
 
                     <div class="user-name">
                         <label for="name">Your Name*</label>
@@ -27,12 +43,12 @@
                     </div>
 
                     <div class="user-email">
-                        <label for="email">Your Email*</label>
+                        <label id="label-email" for="email">Your Email*</label>
                         <input id="email" type="text" name="user_email">
                     </div>
 
-                    <div>
-                        <label for="state">State</label>
+                    <div class="user-state">
+                        <label id="label-state" for="state">State</label>
                         <select id="state" name="state"><option value="---">---</option><option value="Alabama">Alabama</option><option value="Alaska">Alaska</option><option value="Arizona">Arizona</option><option value="Arkansas">Arkansas</option><option value="California">California</option><option value="Colorado">Colorado</option><option value="Connecticut">Connecticut</option><option value="Delaware">Delaware</option><option value="District of Columbia">District of Columbia</option><option value="Florida">Florida</option><option value="Georgia">Georgia</option><option value="Guam">Guam</option><option value="Hawaii">Hawaii</option><option value="Idaho">Idaho</option><option value="Illinois">Illinois</option><option value="Indiana">Indiana</option><option value="Iowa">Iowa</option><option value="Kansas">Kansas</option><option value="Kentucky">Kentucky</option><option value="Louisiana">Louisiana</option><option value="Maine">Maine</option><option value="Maryland">Maryland</option><option value="Massachusetts">Massachusetts</option><option value="Michigan">Michigan</option><option value="Minnesota">Minnesota</option><option value="Mississippi">Mississippi</option><option value="Missouri">Missouri</option><option value="Montana">Montana</option><option value="Nebraska">Nebraska</option><option value="Nevada">Nevada</option><option value="New Hampshire">New Hampshire</option><option value="New Jersey">New Jersey</option><option value="New Mexico">New Mexico</option><option value="New York">New York</option><option value="North Carolina">North Carolina</option><option value="North Dakota">North Dakota</option><option value="Northern Marianas Islands">Northern Marianas Islands</option><option value="Ohio">Ohio</option><option value="Oklahoma">Oklahoma</option><option value="Oregon">Oregon</option><option value="Pennsylvania">Pennsylvania</option><option value="Puerto Rico">Puerto Rico</option><option value="Rhode Island">Rhode Island</option><option value="South Carolina">South Carolina</option><option value="South Dakota">South Dakota</option><option value="Tennessee">Tennessee</option><option value="Texas">Texas</option><option value="Utah">Utah</option><option value="Vermont">Vermont</option><option value="Virginia">Virginia</option><option value="Virgin Islands">Virgin Islands</option><option value="Washington">Washington</option><option value="West Virginia">West Virginia</option><option value="Wisconsin">Wisconsin</option><option value="Wyoming">Wyoming</option></select>
                     </div>
 
@@ -45,22 +61,22 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="textArea">
                         <label for="message">Your Message*</label>
                         <textarea id="message" name="user_message"></textarea>
                     </div>
 
-                    <div>
+                    <div class="checkboxes">
                         <label>Sign up for newsletter
-                            <input type="checkbox" value="subscribe" name="sub_newsletter">
+                            <input class="check" type="checkbox" value="subscribe" name="sub_newsletter">
                         </label>
 
                         <label>Agree to terms and conditions
-                            <input type="checkbox" value="agreeterms" name="terms_conditions_agree">
+                            <input class="check" type="checkbox" value="agreeterms" name="terms_conditions_agree">
                         </label>
                     </div>
 
-                    <div>
+                    <div class="button">
                         <button type="submit">Submit</button>
                     </div>
                 </fieldset>

@@ -1,0 +1,167 @@
+/* nav bar */
+ul{
+    list-style: none;
+}
+
+ol{
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #3d3735;
+}
+
+#logo{
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    margin-left: 40px;
+    color:#3b302c;
+}
+
+.main-nav{
+    display: inline-block;
+    font-family: 'Manrope', 'sans-serif';
+    margin-top: 50px;
+    margin-left: 30%;
+}
+
+.navlist{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+.logo-nav{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #9BABB8;
+    color: #040302;
+}
+
+/* containers */
+.itemsContainer{
+    font-family: 'Manrope', sans-serif;
+    width: 600px;
+    height: 700px;
+    background-color: #EEE3CB;
+    border-radius: 10%;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+}
+
+#title{
+    font-family: 'Dmsans', sans-serif;
+    font-size: 70px;
+    text-align: center;
+    color: #564747;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* form items */
+label{
+    padding-right: 20px;
+}
+
+.user-name{
+    padding: 30px 0;
+    font-size: 24px;
+    color: #564747;
+}
+#name{
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+/* email */
+.user-email{
+    padding: 20px 0;
+    font-size: 24px;
+    color: #564747;
+}
+#email{
+    width: 300px;
+    height: 30px;
+    border: none;
+}
+#label-email{
+    padding-right: 25px;
+}
+/* state */
+.user-state{
+    padding: 20px 0;
+    font-size: 24px;
+    color: #564747;
+    /* padding-left: 10px; */
+}
+#state{
+    width: 310px;
+    height: 35px;
+    border: none;
+}
+#label-state{
+    padding-right: 80px;
+}
+/* why contact */
+.why-Contact{
+    padding: 20px 0;
+    font-size: 24px;
+    color: #564747;
+}
+#whyContact{
+    width: 200px;
+    height: 35px;
+    border: none;
+}
+/* text area */
+.textArea{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 0;
+    font-size: 24px;
+    color: #564747;
+    /* padding-left: 10px; */
+}
+#message{
+    width: 520px;
+    height: 100px;
+    border: none;
+}
+/* checkboxes */
+.checkboxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 30px;
+    color:#564747
+}
+.check{
+    width: 20px;
+    height: 20px;
+}
+
+/* button */
+.button{
+    margin-left: 35%;
+}
+
+button{
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: #564747;
+    color: white;
+}
+
+button:hover{
+    background-color: rgb(123, 123, 218);
+}

@@ -25,8 +25,6 @@ a{
     font-family: 'Manrope', 'sans-serif';
     margin-top: 50px;
     margin-left: 30%;
-
-
 }
 
 .navlist{
@@ -41,8 +39,6 @@ a{
     margin-bottom: 20px;
     background-color: #9BABB8;
     color: #040302;
-
-
 }
 
 /* About the creator  */
@@ -86,14 +82,55 @@ p{
 
 /* Diet Preferences */
 .dietPref{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     font-family: 'Manrope', sans-serif;
-    align-items: center;
+    justify-items: center;
     background-color: #D7C0AE;
 }
 
-.dietWords{
+
+.buttonDiet{
     display: inline-block;
-    padding-right: 50px;
+    border: solid red;
+    margin-bottom: 10px;
+    justify-content: center
+}
+
+.dietButton{
+    display: inline-block;
+    text-align: center;
+}
+
+#gf{
+    background-color: #ff6f00;
+    align-items: center;
+
+}
+#df{}
+#v{}
+#vg{}
+
+.dietWords {
+    display: flex;
+    margin-bottom: 10px;
+    justify-items: space-between;
+}
+
+/* Most Popular */
+.mostPopular{
+    display: flex;
+    flex-direction: column;
+
+}
+.img{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.lablelsDetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }

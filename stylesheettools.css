@@ -1,0 +1,52 @@
+/* nav bar */
+ul{
+    list-style: none;
+}
+
+ol{
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: #3d3735;
+}
+
+#logo{
+    font-family: 'Caveat', cursive;
+    font-size: 60px;
+    margin-left: 40px;
+    color:#3b302c;
+}
+
+.main-nav{
+    display: inline-block;
+    font-family: 'Manrope', 'sans-serif';
+    margin-top: 50px;
+    margin-left: 30%;
+}
+
+.navlist{
+    display: inline-block;
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+.logo-nav{
+    display: flex;
+    margin-bottom: 20px;
+    background-color: #9BABB8;
+    color: #040302;
+}
+
+/* contents start here */
+h1{
+    font-family: 'Dmsans', sans-serif;
+    font-size: 60px;
+    color: #3b302c;
+}
+.head{
+    background-color: #EEE3CB;
+    padding-left: 20px;
+}
