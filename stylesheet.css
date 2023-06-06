@@ -37,7 +37,7 @@ a{
 .logo-nav{
     display: flex;
     margin-bottom: 20px;
-    background-color: #9BABB8;
+    background-color: #EEE3CB;
     color: #040302;
 }
 
@@ -57,8 +57,8 @@ p{
     flex-direction: row;
     justify-content: center;
     text-align: center;
-    background-color: #EEE3CB;
-    margin-bottom: 20px;
+    background-color: rgb(221, 209, 200);
+    margin-bottom: 5%;
 }
 
 .textCreator{
@@ -82,55 +82,105 @@ p{
 
 /* Diet Preferences */
 .dietPref{
-    display: grid;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
     font-family: 'Manrope', sans-serif;
-    justify-items: center;
-    background-color: #D7C0AE;
+    margin-bottom: 8%;
 }
-
 
 .buttonDiet{
-    display: inline-block;
-    border: solid red;
-    margin-bottom: 10px;
-    justify-content: center
-}
-
-.dietButton{
-    display: inline-block;
-    text-align: center;
-}
-
-#gf{
-    background-color: #ff6f00;
-    align-items: center;
-
-}
-#df{}
-#v{}
-#vg{}
-
-.dietWords {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+
+.title{
+    width: 100%;
+}
+/* each button */
+#gf{
+    background-color: #ffc89d;
+    border-radius: 50%;
+    font-size: 30px
+}
+#df{
+    font-size: 30px;
+    background-color: #4ca09a;
+    border-radius: 50%;
+}
+#v{
+    background-color: #67a565;
+    font-size: 30px;
+    border-radius: 50%;
+
+}
+#vg{
+    background-color: #e7df91;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+/* description */
+.dietWords {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
     margin-bottom: 10px;
-    justify-items: space-between;
+
 }
 
 /* Most Popular */
 .mostPopular{
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    margin-bottom: 5%;
 
 }
+
+.title{
+    width: 100%;
+}
+
 .img{
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-.lablelsDetail{
+.labelDetail{
+    font-family: 'Manrope', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+/* Social Medias */
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.socialMediaButton{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+}
+
+#title{
+    font-size: 30px;
+}
+
+li{
+    padding-right: 30px;
+}
+
+svg:hover{
+    color:#967E76;
 }

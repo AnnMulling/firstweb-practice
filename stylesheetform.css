@@ -36,7 +36,7 @@ a{
 .logo-nav{
     display: flex;
     margin-bottom: 20px;
-    background-color: #9BABB8;
+    background-color: #EEE3CB;
     color: #040302;
 }
 
@@ -45,7 +45,7 @@ a{
     font-family: 'Manrope', sans-serif;
     width: 600px;
     height: 700px;
-    background-color: #EEE3CB;
+    background-color: #f3cda5;
     border-radius: 10%;
     border: none;
     display: flex;
@@ -63,6 +63,7 @@ a{
 .formContainer{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
@@ -154,10 +155,11 @@ label{
 }
 
 button{
+    font-size: 20px;
     border: none;
     width: 100px;
     height: 50px;
-    border-radius: 10%;
+    border-radius: 5%;
     background-color: #564747;
     color: white;
 }
